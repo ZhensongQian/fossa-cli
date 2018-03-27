@@ -1,7 +1,9 @@
+### 
+**zqian** so `fossa` has to access customer's codebase to do the analysis? scale? 
+
 ## How it works
 `fossa` works by analyzing your project for dependencies **after** your build system has built your project. This provides much more precise dependency information than just reading package manifest files:
 
-**zqian** so `fossa` has to access customer's codebase to do the analysis? scale? 
 
 - Some build tools are non-deterministic, so two builds with the same configuration may result in different dependencies being used.
 - Many ecosystems use semantic versioning to specify dependency ranges, so running the same build at different points in time may result in different dependencies if a new version was published.
